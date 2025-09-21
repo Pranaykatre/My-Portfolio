@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Experience - Pranay Katre</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      width: 100%;
+      background: linear-gradient(to bottom, #0f0f0f, #1a1a2e);
+      color: white;
+      font-family: 'Poppins', sans-serif;
+      overflow-x: hidden;
+    }
+
+    .protfolio-container {
+      display: flex;
+    }
+
+    .navlist {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      list-style: none;
+      display: flex;
+      gap: 30px;
+      background: #0d0d0d;
+      width: 100%;
+      justify-content: center;
+      padding: 20px 0;
+      z-index: 1000;
+    }
+
+    .navlist li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 10px 15px;
+      transition: 0.3s ease;
+    }
+
+    .navlist li a:hover,
+    .navlist li a.active {
+      color: #4FC3F7;
+      border-bottom: 2px solid #4FC3F7;
+    }
+
+    .left-container {
+      width: 55%;
+      padding: 100px 40px;
+    }
+
+    .icons {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      font-size: 1.5rem;
+      margin-bottom: 30px;
+    }
+
+    .icons i {
+      color: #ccc;
+      transition: 0.3s;
+    }
+
+    .icons i:hover {
+      color: #4FC3F7;
+    }
+
+    .content h1 {
+      font-size: 3rem;
+      color: #4FC3F7;
+      margin-bottom: 20px;
+    }
+
+    .content p {
+      font-size: 1.1rem;
+      margin-bottom: 20px;
+      line-height: 1.6;
+      color: #ccc;
+    }
+
+    /* Certificate Card Styling */
+    .cert-card {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid #4FC3F7;
+      border-radius: 12px;
+      padding: 20px;
+      margin-top: 20px;
+      transition: 0.3s ease;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+    }
+
+    .cert-card:hover {
+      transform: translateY(-5px);
+      background: rgba(79, 195, 247, 0.1);
+    }
+
+    .cert-card h3 {
+      color: #4FC3F7;
+      margin-bottom: 10px;
+    }
+
+    .cert-card a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 16px;
+      background: #4FC3F7;
+      color: black;
+      font-weight: bold;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: 0.3s ease;
+    }
+
+    .cert-card a:hover {
+      background: #0288d1;
+      color: white;
+    }
+
+    .right-container {
+      width: 45%;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .design .circle {
+      position: absolute;
+      border-radius: 50%;
+      background: rgba(79, 195, 247, 0.2);
+      animation: pulse 3s infinite;
+    } 
+    .design .circle:nth-child(1) {
+      width: 300px;
+      height: 300px;
+      background: radial-gradient(circle, #4FC3F7, transparent 70%);
+      z-index: 2;
+    } 
+
+    .design .circle:nth-child(2) {
+      width: 330px;
+      height: 330px;
+      z-index: 1;
+    } 
+    .profile-background {
+      width: 260px;
+      height: 260px;
+      border-radius: 50%;
+      border: 6px solid #4FC3F7;
+      background-image: url('pics.jpg.png');
+      background-size: cover;
+      background-position: center;
+      z-index: 3;
+      animation: fadeIn 1.5s ease;
+    } 
+
+    @keyframes pulse {
+      0% { transform: scale(1); opacity: 0.7; }
+      100% { transform: scale(1.2); opacity: 0; }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.95); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    @media (max-width: 768px) {
+      .protfolio-container { flex-direction: column; }
+      .left-container, .right-container { width: 100%; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <ul class="navlist">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="experience.html" class="active">Experience</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="education.html">Education</a></li>
+    <li><a href="certifications.html">Certifications</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+
+  <div class="protfolio-container">
+    <div class="left-container">
+      <div class="icons">
+        <a href="https://www.linkedin.com/in/pranay-katre-b97163214/" target="_blank">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+        <a href="https://www.facebook.com/" target="_blank">
+          <i class="fa-brands fa-facebook-f"></i>
+        </a>
+      </div>
+
+      <div class="content">
+        <h1>Experience</h1>
+        <p>
+          During my internship at <b>Kamarta Robotics Technology & Automation Pvt. Ltd.</b>, 
+          I worked on the project <b>“The Adaptive Automation”</b> where I gained hands-on 
+          exposure to robotics and automation.  
+          <br><br>
+          I successfully completed structured assignments with Grade A performance and 
+          contributed to designing and analyzing automation solutions.  
+          I also applied problem-solving approaches to improve processes, 
+          while enhancing my ability to collaborate effectively in a remote environment.
+        </p>
+
+        <!-- Certificate Card -->
+        <div class="cert-card">
+          <h3>Internship Certificate</h3>
+          <p>Kamarta Robotics Technology & Automation Pvt. Ltd.</p>
+          <a href="Internship Certificate.pdf" target="_blank">View Certificate</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="right-container">
+      <div class="design">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="profile-background"></div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
